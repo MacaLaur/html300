@@ -8,10 +8,110 @@ html {
     box-sizing: inherit;
 }
 
-.main {
-    padding: 2rem;
+h1, p, h2 {
+    color: $charcoal;
+    font-family: $font-fam;
 }
 
 h1 {
-    color: $red;  
+  font-size: 1.5rem;
 }
+
+p, h2 {
+  font-size: 1rem;
+}
+
+h1, h2 {
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+/* background and border of entire card */
+.main {
+  background-color: $light-blue;
+  padding: 2em;
+  border: 1px solid $border;
+  width: $width;
+}
+
+.flex-container {
+  background-color: $white;
+  padding: 2em 2em 2em 0;
+  display: flex;
+  height: 50%;
+}
+
+.primary {
+  display: block;
+  background-color: $white;
+  height: auto;
+  width: $width;
+  padding: $padding;
+  text-align: center;
+  // might come in handy for mobile configuration! flex-flow: row wrap;
+}
+
+/* auto width allows image to maintain circular shape */
+.profile {
+  border-radius: 50%;
+  height: 75%;
+  width: auto;
+  padding: 1em auto;
+  margin-bottom: 1em;
+}
+
+.secondary {
+  background-color: $light-grey;
+  width: $width;
+  padding: $padding;
+}
+
+/* allows linkedin icon and link to be beside one another */
+.inline {
+  display: inline-block;
+}
+
+/* utilize nesting to apply styles to element <a> when on hover and after having been visited */
+a {
+  text-decoration: none;
+  color: $charcoal;
+  padding-left: 0.5em;
+  &:hover {
+    color: $faded-blue;
+  }
+  &:visited {
+    color: #4B0082;
+  }
+}
+
+/* image and job title will stack on other info on mobile device */
+@media (max-width: 576px) {
+  .main {
+    width: 100%;
+    height: auto;
+  }
+  .flex-container {
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    padding-left: 2em;
+    justify-content: center;
+  }
+  .primary {
+    display: block;
+  }
+  .profile {
+    height: 50%;
+    width: auto;
+  }
+  .secondary {
+    height: 100%;
+    width: 100%;
+    padding: 1em auto;
+  }
+
+
+ }
