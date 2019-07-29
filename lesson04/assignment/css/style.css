@@ -1,1 +1,69 @@
-#one{height:400px;width:400px;background-color:#00f}#one #two{height:200px;width:200px;background-color:red}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Lora', serif; }
+
+.main {
+  position: relative;
+  width: 50%; }
+  .main p {
+    position: absolute;
+    transform: translate(85%, 50%);
+    font-size: 1em; }
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 500px;
+  text-align: center;
+  transform: translate(50%, 15%); }
+  .card:hover > .front {
+    transform: rotateY(-180deg); }
+  .card:hover > .back {
+    transform: rotateY(0deg); }
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 600px;
+  transition: transform 0.8s ease-in-out; }
+  .front h1, .back h1 {
+    padding: 2em;
+    color: #FFFFFF;
+    text-transform: uppercase; }
+
+.front {
+  background-image: url("../images/losangeles.jpg");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer; }
+
+.back {
+  background-color: #D4A49C;
+  transform: rotateY(180deg); }
+  .back h1 {
+    text-decoration: underline; }
+  .back__ul {
+    list-style: none; }
+    .back__ul--list {
+      text-align: left;
+      padding: 1em;
+      line-height: 0.75em; }

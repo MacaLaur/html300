@@ -4,16 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/style.css">
-  <style></style>
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <title>Transitions and Animations</title>
 </head>
 <body>
-  <div id="one">
-    <div id="two">
-
+  <main class="main">
+    <div class="card">
+      <div class="front">
+        <h1>Los Angeles</h1>
+      </div>
+      <div class="back">
+        <h1>Agenda</h1>
+        <ul class="back__ul"> <!-- Implemented this naming convention to apply the BEM methodology in the CSS file -->
+          <li class="back__ul--list">Breakfast:</li>
+          <li class="back__ul--list">Lunch:</li>
+          <li class="back__ul--list">Snacks:</li>
+          <li class="back__ul--list">Dinner:</li>
+          <li class="back__ul--list">Dessert:</li>
+        </ul>
+      </div>
     </div>
-  </div>
-
+    <!-- Explanation of the animation I created as well as a working link to the inspiration source -->
+    <p>I found inspiration for my animation at <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card" target="_blank">W3Schools</a>. For my final project, as I will be implementing the Zomato API to help users create food agendas for their travels, I think the flip card animation will be a neat way to display their custom food agenda behind each unique place they visit. The component that I created here shows that the user has created an agenda for their upcoming trip to Los Angeles. As the user hovers over the card, it flips to the backside to show the food agenda that they have built. </p>
+  </main>
 </body>
 </html>
