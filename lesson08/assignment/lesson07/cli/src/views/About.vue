@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <h1 class="display-3 text-center text-lowercase mb-3 mt-5">Verba Caelesti Letters. | Contact</h1>
+    <h1 class="display-4 text-center text-lowercase mb-3 mt-5">Contact</h1>
 
     <!-- Implement bootstrap grid system and style components based on large, medium and small screen sizes -->
     <div class="row">

@@ -1,6 +1,6 @@
 <template>
   <div class="services">
-    <h1 class="display-3 text-center text-lowercase mb-3 mt-5">Verba Caelesti Letters. | Services</h1>
+    <h1 class="display-4 text-center text-lowercase mb-3 mt-5">Services</h1>
     <p class="lead text-center ml-5 mr-5 text-secondary"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum sed. Molestie a iaculis at erat pellentesque adipiscing commodo. Leo a diam sollicitudin tempor id eu nisl. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Felis imperdiet proin fermentum leo vel orci porta non.</em></p>
 
     <div id="accordion">

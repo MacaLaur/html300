@@ -1,6 +1,5 @@
 <template>
   <div class="home home-background mt-4">
-    <h1 class="company-name display-3 text-lowercase mt-3 p-4 bg-light text-body text-center">Verba Caelesti Letters.</h1>
     <h4 class="company-quote bg-light text-dark text-center p-2"><em>Your one stop shop for all beautiful things hand lettered, wax sealed, and created with love.</em></h4>
     <!-- Implement a buttom to show and hide content by using v-if on the p tag -->
     <button v-on:click="show = !show">Tell Me Something</button>
